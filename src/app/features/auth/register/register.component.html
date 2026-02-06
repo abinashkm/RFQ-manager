@@ -1,0 +1,23 @@
+<h2>Register</h2>
+
+<form [formGroup]="form" (ngSubmit)="register()">
+
+  <input placeholder="Name" formControlName="name" /><br /><br />
+
+  <input placeholder="Email" formControlName="email" /><br /><br />
+
+  <input type="password" placeholder="Password" formControlName="password" /><br /><br />
+
+  <select formControlName="role">
+    <option value="CUSTOMER">Customer</option>
+    <option value="VENDOR">Vendor</option>
+  </select><br /><br />
+
+  <button type="submit">Register</button>
+
+</form>
+
+<p>
+  Already registered?
+  <a routerLink="/login">Login</a>
+</p>

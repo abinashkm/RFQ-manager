@@ -1,0 +1,16 @@
+<h2>Login</h2>
+
+<form [formGroup]="form" (ngSubmit)="login()">
+
+  <input placeholder="Email" formControlName="email" /><br /><br />
+
+  <input type="password" placeholder="Password" formControlName="password" /><br /><br />
+
+  <button type="submit">Login</button>
+
+</form>
+
+<p>
+  New user?
+  <a routerLink="/register">Register</a>
+</p>
